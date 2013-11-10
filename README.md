@@ -1,4 +1,4 @@
-dataStructures
+data-structures
 ==============
 
-Various data structures in various languages
+Various data structures in various languages.
