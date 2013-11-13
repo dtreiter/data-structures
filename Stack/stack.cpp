@@ -2,7 +2,7 @@
 using namespace std;
 
 
-class Stack { // note: this has memory leak
+class Stack {
 	int theStack[];
 	int topOfStack;
 	
