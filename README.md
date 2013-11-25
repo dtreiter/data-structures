@@ -1,4 +1,3 @@
-data-structures
-==============
-
-Various data structures in various languages.
+practice
+===========
+This repository contains various programming exercises and ideas.
