@@ -40,6 +40,6 @@ public class Anagram {
 		assert !isAnagram("wasd", "") : "Assertion 1 failed";
 		assert !isAnagram("aaa", "aa") : "Assertion 2 failed";
 		assert !isAnagram("abc", "def") : "Assertion 3 failed";
-		assert !isAnagram("", "") : "Assertion 4 failed";
+		assert isAnagram("", "") : "Assertion 4 failed";
 	}
 }
