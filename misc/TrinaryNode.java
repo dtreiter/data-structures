@@ -99,7 +99,11 @@ class TrinaryNode {
 		}
 	}
 
-	public String printTreeBreadth() {
+	/**
+	* Returns the breadth first traversal
+	* as a space delimited string.
+	*/
+	public String treeBreadth() {
 		StringBuilder res = new StringBuilder();
 		LinkedList <TrinaryNode> q = new LinkedList <TrinaryNode> ();
 		q.add(this);
@@ -119,15 +123,19 @@ class TrinaryNode {
 		return res.toString();
 	}
 
-	public String printTreePreorder() {
+	/**
+	* Returns the pre-order traversal
+	* as a space delimited string.
+	*/
+	public String treePreorder() {
 		StringBuilder res = new StringBuilder();
 		res.append(this.data + " ");
 		if (this.leftChild != null)
-			res.append(this.leftChild.printTreePreorder() + " ");
+			res.append(this.leftChild.treePreorder() + " ");
 		if (this.middleChild != null)
-			res.append(this.middleChild.printTreePreorder() + " ");
+			res.append(this.middleChild.treePreorder() + " ");
 		if (this.rightChild != null)
-			res.append(this.rightChild.printTreePreorder() + " ");
+			res.append(this.rightChild.treePreorder() + " ");
 	
 		String result = res.toString().replaceAll("\\s+", " "); // remove extra spaces
 

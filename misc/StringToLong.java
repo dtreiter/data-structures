@@ -32,7 +32,7 @@ class StringToLong {
 	}
 
 	public static void main(String args[]) {
-		// some test cases
+		// some test cases (be sure to run 'java -ea FileName' to enable assertions)
 		assert (stringToLong("123") == 123) : "Assertion 0 failed";
 		assert (stringToLong("000") == 0) : "Assertion 1 failed";
 		assert (stringToLong("-23") == -23) : "Assertion 2 failed";
